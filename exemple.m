@@ -42,20 +42,6 @@ end
 
 formatSpec = ['%f %f %s %s' repmat('%f', [1,74])];
 formatHour='dd/mm/yyyy HH:MM:SS';
-% for i=1:length(lista_Cota) % União de todos os arquivos de cotas em uma unica estrutura
-% filename = strcat('cotas_C_',lista_Cota{i,1},'.csv');
-% fid = fopen(filename);
-% C = textscan(fid,formatSpec,'Delimiter',';','HeaderLines',14);
-% fclose(fid);
-% C{1,3} = datenum(C{1,3},formatDate);
-% empties = cellfun('isempty',C{1,4});
-% Z = NaN(length(C{1,4}),1);
-% Z(~empties) = C{1,4}(~empties);
-% Z(~empties) = hour(C{1,4}(~empties),formatHour);
-% C{1,4} = Z;
-% Cotas.(strcat('C',lista_Cota{i})) = [C{:}];
-% clear C Z empties
-% end
 
 for i=1:length(lista_Cota) % Union of all stage files in a single structure
 filename = strcat('cotas_C_',lista_Cota{i,1},'.csv');
