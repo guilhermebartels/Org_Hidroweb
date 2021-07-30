@@ -61,6 +61,7 @@ end
 cd ..
 toc
 
+clear fid filename formatDate formatHour formatSpec H i ans
 
 %% Section to organize data with Org_Hidroweb.m
 
@@ -79,5 +80,5 @@ for i = 1 : length(lista_Cota) % Organization of stage data
 end
 toc
 
-
+clear i
 
