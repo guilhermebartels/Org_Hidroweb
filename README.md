@@ -28,4 +28,3 @@ Community contributions to this package are welcome!
 
 To report bugs, please submit an issue [here](https://github.com/guilhermebartels/Org_Hidroweb/issues)
 
-Contact: guilhermebartels@gmail.com
